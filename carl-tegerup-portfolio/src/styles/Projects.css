@@ -1,30 +1,31 @@
 #projekt {
   padding: 6rem 2rem;
-  background-color: #162035;
+  background-color: var(--bg-medium);
   background-image: repeating-linear-gradient(
     45deg,
     transparent,
     transparent 40px,
-    rgba(255, 255, 255, 0.02) 40px,
-    rgba(255, 255, 255, 0.02) 41px
+    var(--stripe-color) 40px,
+    var(--stripe-color) 41px
   );
-  border-top: 1px solid #2a3f5f;
+  border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 #projekt h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #f0e6d3;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .projects-intro {
   font-size: 1.1rem;
-  color: #c5d4eb;
+  color: var(--text-secondary);
   max-width: 600px;
   text-align: center;
   margin-bottom: 3rem;
@@ -34,20 +35,22 @@
 .projects-grid {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 1rem;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
 }
 
-/* --- Projektkorten --- */
 .project-card {
-  background-color: #1e2f4a;
-  border: 1px solid #2a3f5f;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 2rem;
   width: 320px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   transition:
     transform 0.2s,
     box-shadow 0.2s,
@@ -56,29 +59,38 @@
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  border-color: #f0a045; /* Orange ram vid hover! */
+  box-shadow: 0 8px 24px var(--shadow);
+  border-color: var(--accent);
 }
 
 .project-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #f0e6d3;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   margin-top: 0;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #c5d4eb;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin: 0;
+  flex: 1;
 }
 
 .project-divider {
   border: none;
-  border-top: 1px solid #2a3f5f;
-  margin: 1.25rem 0 1rem;
+  border-top: 1px solid var(--border);
+  margin: 1.25rem 0 0.5rem;
+}
+
+.project-tags-label {
+  font-size: 0.65rem;
+  color: rgba(90, 112, 144, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 0.5rem;
 }
 
 .project-tags {
@@ -91,15 +103,15 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid #2a3f5f;
+  background-color: var(--tag-bg);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 4px 8px;
   transition: border-color 0.2s;
 }
 
 .project-card:hover .project-tag {
-  border-color: rgba(240, 160, 69, 0.25);
+  border-color: var(--accent-border);
 }
 
 .project-tag img {
@@ -108,12 +120,12 @@
 }
 
 .project-tag img[alt="GitHub"] {
-  filter: invert(1);
+  filter: var(--github-filter);
 }
 
 .project-tag span {
   font-size: 0.7rem;
-  color: #8da3c7;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
@@ -121,32 +133,26 @@
   #projekt {
     padding: 4rem 1.5rem;
   }
-
   #projekt h2 {
     font-size: 1.75rem;
   }
-
   .projects-intro {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
-
   .projects-grid {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
-
   .project-card {
     width: 100%;
     max-width: 320px;
     padding: 1.5rem;
   }
-
   .project-card h3 {
     font-size: 1.2rem;
   }
-
   .project-card p {
     font-size: 0.95rem;
   }

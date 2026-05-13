@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/Navbar.css";
 
-function Navbar() {
+function Navbar({ toggleTheme, theme }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -54,6 +54,13 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <button
+        className="theme-toggle"
+        onClick={toggleTheme}
+        aria-label="Byt tema"
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
+      </button>
     </nav>
   );
 }

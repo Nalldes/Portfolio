@@ -1,26 +1,27 @@
 #kontakt {
   padding: 6rem 2rem;
   text-align: center;
-  background-color: #0a1628;
+  background-color: var(--bg-dark);
   background-image: radial-gradient(
     circle,
-    rgba(255, 255, 255, 0.05) 1px,
+    var(--dot-color) 1px,
     transparent 1px
   );
   background-size: 28px 28px;
-  border-top: 1px solid #2a3f5f;
+  border-top: 1px solid var(--border);
+  transition: background-color 0.3s ease;
 }
 
 #kontakt h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #f0e6d3;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
 }
 
 #kontakt p {
   font-size: 1.1rem;
-  color: #c5d4eb;
+  color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto 3rem auto;
   line-height: 1.6;
@@ -40,8 +41,8 @@
   flex-direction: row;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: #1e2f4a;
-  border: 1px solid #2a3f5f;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 8px;
   text-decoration: none;
   cursor: pointer;
@@ -53,20 +54,19 @@
 
 .contact-email:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  border-color: #f0a045;
+  box-shadow: 0 8px 24px var(--shadow);
+  border-color: var(--accent);
 }
 
 .email-icon {
   font-size: 1rem;
-  margin-bottom: 0rem;
   margin-right: 0.75rem;
 }
 
 .email-text {
   font-size: 1rem;
   font-weight: 600;
-  color: #f0e6d3;
+  color: var(--text-primary);
 }
 
 .social-buttons {
@@ -74,13 +74,6 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-.social-icon-link {
-  display: inline-block;
-  transition:
-    transform 0.2s,
-    filter 0.2s;
 }
 
 .linkedin-link {
@@ -125,31 +118,25 @@
   #kontakt {
     padding: 4rem 1.5rem;
   }
-
   #kontakt h2 {
     font-size: 1.75rem;
   }
-
   #kontakt p {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
-
   .contact-links {
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .contact-email {
     width: 100%;
     max-width: 300px;
     justify-content: center;
   }
-
   .social-buttons {
     gap: 1.5rem;
   }
-
   .linkedin-img,
   .github-img {
     width: 50px;

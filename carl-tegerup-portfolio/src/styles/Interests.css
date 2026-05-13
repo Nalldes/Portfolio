@@ -1,23 +1,24 @@
 #intressen {
   padding: 6rem 2rem;
-  background-color: #162035;
+  background-color: var(--bg-medium);
   background-image: repeating-linear-gradient(
     45deg,
     transparent,
     transparent 40px,
-    rgba(255, 255, 255, 0.02) 40px,
-    rgba(255, 255, 255, 0.02) 41px
+    var(--stripe-color) 40px,
+    var(--stripe-color) 41px
   );
   display: flex;
-  border-top: 1px solid #2a3f5f;
+  border-top: 1px solid var(--border);
   flex-direction: column;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 #intressen h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #f0e6d3;
+  color: var(--text-primary);
   margin-bottom: 3rem;
 }
 
@@ -30,11 +31,11 @@
 }
 
 .interest-card {
-  background: #1e2f4a;
-  border: 1px solid #2a3f5f;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.5rem;
-  width: 280px;
+  padding: 2rem 1.5rem;
+  width: 220px;
   text-align: center;
   transition:
     transform 0.2s,
@@ -43,62 +44,61 @@
 
 .interest-card:hover {
   transform: translateY(-4px);
-  border-color: #f0a045;
-}
-
-.interest-card h3 {
-  font-size: 1.2rem;
-  color: #f0a045;
-  margin-bottom: 1rem;
-}
-
-.interest-card p {
-  font-size: 0.95rem;
-  color: #c5d4eb;
-  line-height: 1.6;
+  border-color: var(--accent);
 }
 
 .interest-icon {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(240, 160, 69, 0.12);
-  border: 1px solid rgba(240, 160, 69, 0.25);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.25rem;
   font-size: 1.6rem;
-  transition: border-color 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
 }
 
 .interest-card:hover .interest-icon {
-  border-color: rgba(240, 160, 69, 0.5);
+  background: rgba(240, 160, 69, 0.2);
+  border-color: var(--accent);
+}
+
+.interest-card h3 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.interest-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
 
 @media (max-width: 440px) {
   #intressen {
     padding: 4rem 1.5rem;
   }
-
   #intressen h2 {
     font-size: 1.75rem;
     margin-bottom: 2rem;
   }
-
   .interests-grid {
     width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
   }
-
   .interest-card {
     width: 100%;
     max-width: 320px;
     padding: 1.2rem;
   }
-
   .interest-card h3 {
     font-size: 1.15rem;
   }
