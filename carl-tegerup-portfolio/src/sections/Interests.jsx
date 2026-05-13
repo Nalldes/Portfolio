@@ -5,7 +5,7 @@ function Interests() {
     {
       title: "Sport",
       description:
-        "Jag är en aktiv person som alltid älskat att både titta och utöva sport, favoriten är Ishockey. Spelat från jag var 6 år gammal och har spelat i Örebros Universitetslag allra senast.",
+        "Jag är en aktiv person som alltid älskat att både titta och utöva sport, favoriten är Ishockey. Jag har spelat till och från sen jag var 6 år gammal, allra senast i Örebros Universitetslag 25/26.",
     },
     {
       title: "Musik",
@@ -15,12 +15,12 @@ function Interests() {
     {
       title: "Datorspel",
       description:
-        "Datorspel har alltid varit en stor del av mitt liv vid sidan av sport och musik. Det är något jag håller på med fortfarande och ser inte mig själv sluta än på ett tag.",
+        "Datorspel har alltid varit en stor del av mitt liv vid sidan av sport och musik. Det är något jag håller på med fortfarande och tycker det är lika roligt idag som när jag var yngre.",
     },
     {
-      title: "Utveckling",
+      title: "Datorer och teknik",
       description:
-        "Jag har alltid varit intresserad av att skapa saker och ser mig själv som en kreativ person. Har alltid byggt mina egna datorer och suttit framför datorn vilket jag tror är anledningen till att det känns så naturligt för mig att arbeta framför en skärm idag.",
+        "Jag har alltid varit intresserad av datorer och teknik. Har byggt mina egna datorer genom åren och suttit framför datorn vilket jag tror är anledningen till att det känns så naturligt och trivsamt för mig att arbeta framför en skärm.",
     },
   ];
 
