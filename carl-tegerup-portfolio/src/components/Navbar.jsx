@@ -14,7 +14,9 @@ function Navbar() {
 
   return (
     <nav>
-      <h1>Carl Tegerup</h1>
+      <a href="#" onClick={closeMenu}>
+        <h1>Carl Tegerup</h1>
+      </a>
 
       <div
         className={`hamburger ${isOpen ? "active" : ""}`}
