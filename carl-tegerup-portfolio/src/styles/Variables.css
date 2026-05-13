@@ -8,6 +8,8 @@
   --border-subtle: rgba(255, 255, 255, 0.05);
   --text-primary: #f0e6d3;
   --text-secondary: #c5d4eb;
+  --text-h1: #f0a045;
+  --text-h1-hover: #f0e6d3;
   --text-muted: #8da3c7;
   --text-nav: #8a9bb5;
   --accent: #f0a045;
@@ -32,6 +34,8 @@
   --border-subtle: rgba(0, 0, 0, 0.08);
   --text-primary: #1a2a3a;
   --text-secondary: #3a4f6a;
+  --text-h1: #1a2a3a;
+  --text-h1-hover: #c97a10;
   --text-muted: #5a7090;
   --text-nav: #4a5f7a;
   --accent: #c97a10;
