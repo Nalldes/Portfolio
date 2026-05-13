@@ -1,0 +1,56 @@
+import "../styles/Experience.css";
+
+function Experience() {
+  // Här fyller du i dina utbildningar, jobb eller andra relevanta erfarenheter.
+  // Kopiera bara ett objekt och klistra in under för att lägga till fler!
+  const experiences = [
+    {
+      id: 1,
+      role: "Systemvetenskap, Kandidatprogram",
+      company: "Örebro Universitet",
+      period: "2023 - 2026",
+      description:
+        "Studier med fokus på systemutveckling, databaser, och interaktionsdesign. Stort fokus på problemlösning och att arbeta i agila team.",
+    },
+    {
+      id: 2,
+      role: "Grundkurs (30 hp), Psykologi",
+      company: "Örebro Universitet",
+      period: "2025",
+      description:
+        "Studier med fokus på grunderna inom psykologi, inklusive kognitiv psykologi, socialpsykologi och utvecklingspsykologi. Förståelse för mänskligt beteende och hur det påverkar sociala interaktioner",
+    },
+    {
+      id: 3,
+      role: "Tekniska Färdigheter & Verktyg",
+      company: "Självlärd & Universitetsstudier",
+      period: "Ständigt pågående",
+      description:
+        "Praktisk erfarenhet av Java, JavaScript, C#, Datamodellering, MySQL, SQL Server, React, HTML, CSS och Git. Har även en stark grundförståelse för UI/UX och hur man bygger användarvänliga gränssnitt.",
+    },
+  ];
+
+  return (
+    <section id="erfarenheter">
+      <h2>Erfarenheter</h2>
+      <p className="experience-intro">
+        En översikt av min akademiska bakgrund och mina tekniska kunskaper.
+      </p>
+
+      <div className="experience-grid">
+        {experiences.map((exp) => (
+          <div key={exp.id} className="experience-card">
+            <div className="experience-header">
+              <h3>{exp.role}</h3>
+              <span className="experience-period">{exp.period}</span>
+            </div>
+            <h4 className="experience-company">{exp.company}</h4>
+            <p>{exp.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Experience;

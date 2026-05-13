@@ -1,0 +1,58 @@
+#intressen {
+  padding: 6rem 2rem;
+  background-color: #162035;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(255, 255, 255, 0.02) 40px,
+    rgba(255, 255, 255, 0.02) 41px
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intressen h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f0e6d3;
+  margin-bottom: 3rem;
+}
+
+.interests-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.interest-card {
+  background: #1e2f4a;
+  border: 1px solid #2a3f5f;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  text-align: center;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+
+.interest-card:hover {
+  transform: translateY(-4px);
+  border-color: #f0a045;
+}
+
+.interest-card h3 {
+  font-size: 1.2rem;
+  color: #f0a045;
+  margin-bottom: 1rem;
+}
+
+.interest-card p {
+  font-size: 0.95rem;
+  color: #c5d4eb;
+  line-height: 1.6;
+}

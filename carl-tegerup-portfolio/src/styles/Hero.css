@@ -1,0 +1,34 @@
+#om-mig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 2rem;
+  background-color: #0f1a2e;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+#om-mig h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f0e6d3;
+  margin-bottom: 1.5rem;
+}
+
+#om-mig h1 span {
+  color: #f0a045;
+}
+
+#om-mig p {
+  font-size: 1.2rem;
+  color: #c5d4eb;
+  max-width: 550px;
+  line-height: 1.8;
+}

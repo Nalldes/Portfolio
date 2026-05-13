@@ -1,0 +1,106 @@
+#erfarenheter {
+  padding: 6rem 2rem;
+  background-color: #0a1628;
+  /* Samma snygga prickiga bakgrund som på kontaktsidan */
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  border-top: 1px solid #2a3f5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#erfarenheter h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f0e6d3;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.experience-intro {
+  font-size: 1.1rem;
+  color: #c5d4eb;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px; /* Håller korten centrerade och lagom breda */
+}
+
+/* --- Själva korten --- */
+.experience-card {
+  background-color: #1e2f4a;
+  border: 1px solid #2a3f5f;
+  border-radius: 12px;
+  padding: 2rem;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+  text-align: left;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: #f0a045; /* Samma orangea kantlinje som mail-kortet */
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f0e6d3;
+  margin: 0;
+}
+
+/* Den lilla rutan som visar årtal */
+.experience-period {
+  font-size: 0.9rem;
+  color: #f0a045;
+  background-color: rgba(
+    240,
+    160,
+    69,
+    0.1
+  ); /* En väldigt svag version av din accentfärg */
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.experience-company {
+  font-size: 1rem;
+  color: #8da3c7; /* Något mörkare än brödtexten för att skapa kontrast */
+  margin-bottom: 1rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #c5d4eb;
+  line-height: 1.6;
+  margin: 0;
+}

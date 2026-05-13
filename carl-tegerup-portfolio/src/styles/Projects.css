@@ -1,0 +1,70 @@
+#projekt {
+  padding: 6rem 2rem;
+  background-color: #0a1628;
+  /* HÄR ÄR LINJEN SOM DELAR UPP SEKTIONERNA: */
+  border-top: 1px solid #2a3f5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projekt h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f0e6d3;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.projects-intro {
+  font-size: 1.1rem;
+  color: #c5d4eb;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* --- Projektkorten --- */
+.project-card {
+  background-color: #1e2f4a;
+  border: 1px solid #2a3f5f;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 320px;
+  text-align: left;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: #f0a045; /* Orange ram vid hover! */
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f0e6d3;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #c5d4eb;
+  line-height: 1.6;
+  margin: 0;
+}
