@@ -32,7 +32,7 @@
 .interest-card {
   background: #1e2f4a;
   border: 1px solid #2a3f5f;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
   width: 280px;
   text-align: center;
@@ -56,6 +56,24 @@
   font-size: 0.95rem;
   color: #c5d4eb;
   line-height: 1.6;
+}
+
+.interest-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(240, 160, 69, 0.12);
+  border: 1px solid rgba(240, 160, 69, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 1.6rem;
+  transition: border-color 0.2s;
+}
+
+.interest-card:hover .interest-icon {
+  border-color: rgba(240, 160, 69, 0.5);
 }
 
 @media (max-width: 440px) {
