@@ -120,3 +120,39 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  #kontakt {
+    padding: 4rem 1.5rem;
+  }
+
+  #kontakt h2 {
+    font-size: 1.75rem;
+  }
+
+  #kontakt p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-email {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .social-buttons {
+    gap: 1.5rem;
+  }
+
+  .linkedin-img,
+  .github-img {
+    width: 50px;
+    height: 50px;
+  }
+}

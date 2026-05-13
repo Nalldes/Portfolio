@@ -68,3 +68,38 @@
   line-height: 1.6;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  #projekt {
+    padding: 4rem 1.5rem;
+  }
+
+  #projekt h2 {
+    font-size: 1.75rem;
+  }
+
+  .projects-intro {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+}

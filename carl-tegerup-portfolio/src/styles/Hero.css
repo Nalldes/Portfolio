@@ -32,3 +32,19 @@
   max-width: 550px;
   line-height: 1.8;
 }
+
+@media (max-width: 768px) {
+  #om-mig {
+    padding: 0 1.5rem;
+  }
+
+  #om-mig h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #om-mig p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
