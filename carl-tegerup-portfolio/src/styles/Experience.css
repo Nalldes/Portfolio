@@ -97,6 +97,33 @@
   margin: 0;
 }
 
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.experience-tag {
+  background-color: rgba(240, 160, 69, 0.1);
+  color: #f0a045;
+  border: 1px solid rgba(240, 160, 69, 0.25);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.experience-tag:hover {
+  background-color: rgba(240, 160, 69, 0.2);
+  border-color: rgba(240, 160, 69, 0.5);
+}
+
 @media (max-width: 440px) {
   #erfarenheter {
     padding: 4rem 1.5rem;

@@ -11,6 +11,14 @@ function Experience() {
       period: "2023 - 2026",
       description:
         "Studier med fokus på systemutveckling, databaser, och interaktionsdesign. Stort fokus på problemlösning och att arbeta i agila team.",
+      tags: [
+        "Scrum",
+        "Agil utveckling",
+        "Systemutveckling",
+        "Databaser",
+        "Interaktionsdesign",
+        "Webbutveckling",
+      ],
     },
     {
       id: 2,
@@ -19,6 +27,13 @@ function Experience() {
       period: "2025",
       description:
         "Studier med fokus på grunderna inom psykologi, inklusive kognitiv psykologi, socialpsykologi och utvecklingspsykologi. Förståelse för mänskligt beteende och hur det påverkar sociala interaktioner",
+      tags: [
+        "Kognitiv psykologi",
+        "Socialpsykologi",
+        "Utvecklingspsykologi",
+        "Mänskligt beteende",
+        "Sociala interaktioner",
+      ],
     },
     {
       id: 3,
@@ -27,6 +42,19 @@ function Experience() {
       period: "Ständigt pågående",
       description:
         "Praktisk erfarenhet av Java, JavaScript, C#, Datamodellering, MySQL, SQL Server, React, HTML, CSS och Git. Har även en stark grundförståelse för UI/UX och hur man bygger användarvänliga gränssnitt.",
+      tags: [
+        "Java",
+        "JavaScript",
+        "C#",
+        "Datamodellering",
+        "MySQL",
+        "SQL Server",
+        "React.js",
+        "HTML",
+        "CSS",
+        "Git",
+        "UI/UX-design",
+      ],
     },
   ];
 
@@ -46,6 +74,16 @@ function Experience() {
             </div>
             <h4 className="experience-company">{exp.company}</h4>
             <p>{exp.description}</p>
+
+            {exp.tags && (
+              <div className="experience-tags">
+                {exp.tags.map((tag) => (
+                  <span key={tag} className="experience-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
