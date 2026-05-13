@@ -34,7 +34,7 @@
 .projects-grid {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
@@ -73,6 +73,48 @@
   color: #c5d4eb;
   line-height: 1.6;
   margin: 0;
+}
+
+.project-divider {
+  border: none;
+  border-top: 1px solid #2a3f5f;
+  margin: 1.25rem 0 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid #2a3f5f;
+  border-radius: 6px;
+  padding: 4px 8px;
+  transition: border-color 0.2s;
+}
+
+.project-card:hover .project-tag {
+  border-color: rgba(240, 160, 69, 0.25);
+}
+
+.project-tag img {
+  width: 15px;
+  height: 15px;
+}
+
+.project-tag img[alt="GitHub"] {
+  filter: invert(1);
+}
+
+.project-tag span {
+  font-size: 0.7rem;
+  color: #8da3c7;
+  font-weight: 500;
 }
 
 @media (max-width: 440px) {
