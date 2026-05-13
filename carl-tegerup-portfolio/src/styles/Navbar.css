@@ -14,14 +14,16 @@ nav {
 nav h1 {
   position: absolute;
   left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 1.5rem;
   font-weight: 700;
   color: #f0e6d3;
   margin: 0;
-  cursor: pointer; /* Gör att muspekaren blir en klickbar "hand" */
+  cursor: pointer;
   transition:
     color 0.3s ease,
-    text-shadow 0.3s ease; /* Gör att neonljuset tonas in mjukt */
+    text-shadow 0.3s ease;
 }
 
 nav ul {
