@@ -96,7 +96,7 @@ nav h1:hover {
   border-radius: 2px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .hamburger {
     display: block;
   }
