@@ -106,7 +106,7 @@ function Projects() {
       id: 6,
       title: "HealthStrive",
       description:
-        "Mitt slutprojekt som jag gjorde i samband med min examen på Örebro Universitet. Arbetade tillsammans med två goda vänner och vi lyckades skapa en fungerande webbplattform för att spåra kost, ge tips om träning och dagliga hälsomål. Vi utvecklade frontend i JavaScript/React, HTML, CSS. Backend med hjälp av Node.js och implementerade en SQL-databas i molnet genom Azure.",
+        "Mitt slutprojekt som jag gjorde i samband med min examen på Örebro Universitet. Arbetade tillsammans med två goda vänner och vi lyckades skapa en fungerande webbplattform för att spåra kost, ge tips om träning och dagliga hälsomål.",
       tags: [
         {
           name: "React",
@@ -135,6 +135,10 @@ function Projects() {
         {
           name: "CSS",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        },
+        {
+          name: "C#",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
         },
       ],
     },
