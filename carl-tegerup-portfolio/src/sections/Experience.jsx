@@ -6,7 +6,7 @@ function Experience() {
   const experiences = [
     {
       id: 1,
-      role: "Systemvetenskap, Kandidatprogram",
+      role: "Kandidatprogram (180 hp), Systemvetenskap",
       company: "Örebro Universitet",
       period: "2023 - 2026",
       description:
