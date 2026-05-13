@@ -34,6 +34,37 @@
   line-height: 1.8;
 }
 
+.hero-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent), rgba(240, 160, 69, 0.3));
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px rgba(240, 160, 69, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-avatar:hover {
+  box-shadow: 0 0 35px rgba(240, 160, 69, 0.4);
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (max-width: 440px) {
+  .hero-avatar {
+    width: 110px;
+    height: 110px;
+  }
+}
+
 @media (max-width: 440px) {
   #om-mig {
     padding: 0 1.5rem;

@@ -1,8 +1,12 @@
 import "../styles/Hero.css";
+import profileImg from "/calle cv bild.jpg";
 
 function Hero() {
   return (
     <section id="om-mig">
+      <div className="hero-avatar">
+        <img src={profileImg} alt="Carl Tegerup" />
+      </div>
       <h1>
         Hej, mitt namn är <span>Carl</span>
       </h1>
