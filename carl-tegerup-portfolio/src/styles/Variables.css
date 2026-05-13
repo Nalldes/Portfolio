@@ -17,9 +17,9 @@
   --accent-border: rgba(240, 160, 69, 0.25);
   --nav-bg: rgba(10, 15, 25, 0.95);
   --nav-mobile-bg: rgba(10, 15, 25, 0.98);
-  --dot-color: rgba(255, 255, 255, 0.05);
-  --dot-color-hero: rgba(255, 255, 255, 0.07);
-  --stripe-color: rgba(255, 255, 255, 0.02);
+  --dot-color: rgba(255, 255, 255, 0.1);
+  --dot-color-hero: rgba(255, 255, 255, 0.1);
+  --stripe-color: rgba(255, 255, 255, 0.1);
   --tag-bg: rgba(255, 255, 255, 0.04);
   --github-filter: invert(1);
   --shadow: rgba(0, 0, 0, 0.3);
@@ -43,9 +43,9 @@
   --accent-border: rgba(201, 122, 16, 0.3);
   --nav-bg: rgba(240, 244, 250, 0.95);
   --nav-mobile-bg: rgba(240, 244, 250, 0.98);
-  --dot-color: rgba(0, 0, 0, 0.04);
-  --dot-color-hero: rgba(0, 0, 0, 0.05);
-  --stripe-color: rgba(0, 0, 0, 0.015);
+  --dot-color: rgba(0, 0, 0, 0.2);
+  --dot-color-hero: rgba(0, 0, 0, 0.2);
+  --stripe-color: rgba(0, 0, 0, 0.2);
   --tag-bg: rgba(0, 0, 0, 0.03);
   --github-filter: invert(0);
   --shadow: rgba(0, 0, 0, 0.1);
