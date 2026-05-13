@@ -1,7 +1,13 @@
 #projekt {
   padding: 6rem 2rem;
   background-color: #0a1628;
-  /* HÄR ÄR LINJEN SOM DELAR UPP SEKTIONERNA: */
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(255, 255, 255, 0.02) 40px,
+    rgba(255, 255, 255, 0.02) 41px
+  );
   border-top: 1px solid #2a3f5f;
   display: flex;
   flex-direction: column;
