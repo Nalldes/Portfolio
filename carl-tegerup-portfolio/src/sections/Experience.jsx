@@ -41,7 +41,7 @@ function Experience() {
       company: "Självlärd & Universitetsstudier",
       period: "Ständigt pågående",
       description:
-        "Praktisk erfarenhet av Java, JavaScript, C#, Datamodellering, MySQL, SQL Server, React, HTML, CSS och Git. Har även en stark grundförståelse för UI/UX och hur man bygger användarvänliga gränssnitt.",
+        "Praktisk erfarenhet av Java, JavaScript, C#, Datamodellering, MySQL, SQL Server, React, HTML, CSS och GitHub. Har även en stark grundförståelse för UI/UX och hur man bygger användarvänliga gränssnitt.",
       tags: [
         "Java",
         "JavaScript",
@@ -52,7 +52,7 @@ function Experience() {
         "React.js",
         "HTML",
         "CSS",
-        "Git",
+        "GitHub",
         "UI/UX-design",
       ],
     },

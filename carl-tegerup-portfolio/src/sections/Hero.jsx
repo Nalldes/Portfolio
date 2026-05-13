@@ -7,8 +7,8 @@ function Hero() {
         Hej, mitt namn är <span>Carl</span>
       </h1>
       <p>
-        Jag är en nyexaminerad student som fått intresset för programmering tack
-        vare mina studier på Örebro Universitets Systemvetenskapliga
+        Jag är en nyexaminerad student som fått upp intresset för programmering
+        tack vare mina studier på Örebro Universitets Systemvetenskapliga
         kandidatprogram. Jag har sedan en väldigt ung ålder alltid varit
         fascinerad av datorer och teknik, men det var under min tid på
         universitetet som jag verkligen började utforska programmering. Jag har

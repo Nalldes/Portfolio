@@ -6,7 +6,7 @@ function Projects() {
       id: 1,
       title: "Men in Black",
       description:
-        "Ett projekt där jag och mina gruppmedlemmar arbetade mot lärarnas kravlista på systemet. Vi programmerade i Java och använde oss av Git för versionshantering samt en MySQL-databas.",
+        "Ett projekt där jag och mina gruppmedlemmar fick skapa ett affärssystem för en fiktiv agent-grupp, vi arbetade genomgående mot lärarnas kravlista på systemet. Vi programmerade i Java och använde oss av GitHub för versionshantering samt en MySQL-databas.",
       tags: [
         {
           name: "Java",
@@ -26,7 +26,7 @@ function Projects() {
       id: 2,
       title: "Hattmakarna",
       description:
-        "Ett system för en hattmakare där fokuset låg på att arbeta inom Scrums ramverk. Kravlistan på systemet utökades i takt med projektets gång. Vi utvecklade med Java med JForms och även här implementerades en MySQL-databas samt Git för versionshantering.",
+        "Ett system för en hattmakare där fokuset låg på att arbeta inom Scrums ramverk. Kravlistan på systemet utökades i takt med projektets gång. Vi utvecklade med Java med JForms och även här implementerades en MySQL-databas samt GitHub för versionshantering.",
       tags: [
         {
           name: "Java",
@@ -46,7 +46,7 @@ function Projects() {
       id: 3,
       title: "Dammsjön Vassklippare",
       description:
-        "Ett projekt med fokus på att lära oss grunderna i webbutveckling med html och css där vi skapade en hemsida för en fiktiv vassklipparåterförsäljare. Vi programmerade med hjälp av Java även här och använde Git för versionshantering.",
+        "Ett projekt med fokus på att lära oss grunderna i webbutveckling med html och css där vi skapade en hemsida för en fiktiv vassklipparåterförsäljare. Vi programmerade med hjälp av Java även här och använde GitHub för versionshantering.",
       tags: [
         {
           name: "HTML",
@@ -70,7 +70,7 @@ function Projects() {
       id: 4,
       title: "Podcast-hanterare",
       description:
-        "Ett projekt där vi utvecklade en bibliotekapplikation som hanterar podcasts. Vi arbetade exclusivt i C# och använde Git för versionshantering.",
+        "Ett projekt där vi utvecklade en bibliotekapplikation som hanterar podcasts. Vi arbetade exclusivt i C# och använde GitHub för versionshantering.",
       tags: [
         {
           name: "C#",
@@ -79,6 +79,10 @@ function Projects() {
         {
           name: "GitHub",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        },
+        {
+          name: "XML",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg",
         },
       ],
     },
