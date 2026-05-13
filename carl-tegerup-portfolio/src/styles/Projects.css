@@ -69,7 +69,7 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
   #projekt {
     padding: 4rem 1.5rem;
   }

@@ -121,7 +121,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
   #kontakt {
     padding: 4rem 1.5rem;
   }
