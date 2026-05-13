@@ -1,24 +1,50 @@
+import { useState } from "react";
 import "../styles/Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav>
-      <ul>
-        <h1 className="nav-title">Carl Tegerup</h1>
+      <h1>Carl Tegerup</h1>
+
+      <div
+        className={`hamburger ${isOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
+      <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="#om-mig">Om Mig</a>
+          <a href="#om-mig" onClick={closeMenu}>
+            Om mig
+          </a>
         </li>
         <li>
-          <a href="#intressen">Intressen</a>
+          <a href="#erfarenheter" onClick={closeMenu}>
+            Erfarenheter
+          </a>
         </li>
         <li>
-          <a href="#erfarenheter">Erfarenheter</a>
+          <a href="#projekt" onClick={closeMenu}>
+            Projekt
+          </a>
         </li>
         <li>
-          <a href="#projekt">Projekt</a>
-        </li>
-        <li>
-          <a href="#kontakt">Kontakt</a>
+          <a href="#kontakt" onClick={closeMenu}>
+            Kontakt
+          </a>
         </li>
       </ul>
     </nav>
