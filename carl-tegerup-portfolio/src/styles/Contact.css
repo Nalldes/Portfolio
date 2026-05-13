@@ -37,13 +37,14 @@
 
 .contact-email {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 0.75rem 1.5rem;
   background-color: #1e2f4a;
   border: 1px solid #2a3f5f;
-  border-radius: 12px;
+  border-radius: 8px;
   text-decoration: none;
+  cursor: pointer;
   transition:
     transform 0.2s,
     box-shadow 0.2s,
@@ -57,12 +58,13 @@
 }
 
 .email-icon {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+  margin-right: 0.75rem;
 }
 
 .email-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #f0e6d3;
 }
