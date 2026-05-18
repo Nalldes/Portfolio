@@ -7,6 +7,7 @@ function Projects() {
       title: "Men in Black",
       description:
         "Ett projekt där jag och mina gruppmedlemmar fick skapa ett affärssystem för en fiktiv agent-grupp, vi arbetade genomgående mot lärarnas kravlista på systemet. Vi programmerade i Java och använde oss av GitHub för versionshantering samt en MySQL-databas.",
+      githubUrl: "https://github.com/Nalldes/MiB-projekt",
       tags: [
         {
           name: "Java",
@@ -27,6 +28,7 @@ function Projects() {
       title: "Hattmakarna",
       description:
         "Ett system för en hattmakare där fokuset låg på att arbeta inom Scrums ramverk. Kravlistan på systemet utökades i takt med projektets gång. Vi utvecklade med Java med JForms och även här implementerades en MySQL-databas samt GitHub för versionshantering.",
+      githubUrl: "https://github.com/Nalldes/Hatt",
       tags: [
         {
           name: "Java",
@@ -91,6 +93,7 @@ function Projects() {
       title: "CV-hanterare",
       description:
         "Utvecklade en komplett webbapplikation i C#, ASP.NET, och Entity Framework. Koden är strukturerad med en flerlagersarkitektur.",
+      githubUrl: "https://github.com/Nalldes/CVManager",
       tags: [
         {
           name: "C#",
@@ -146,6 +149,31 @@ function Projects() {
         },
       ],
     },
+    {
+      id: 7,
+      title: "CV/Portfolio",
+      description:
+        "Min första egna hemsida, fungerar som en portfolio för mina projekt jag deltagit i men också som ett CV med information om mig som till exempel vilka tekniska färdigheter jag besitter.",
+      githubUrl: "https://github.com/Nalldes/Portfolio",
+      tags: [
+        {
+          name: "React",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "CSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        },
+        {
+          name: "HTML",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        },
+      ],
+    },
   ];
 
   return (
@@ -169,6 +197,20 @@ function Projects() {
                 </div>
               ))}
             </div>
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-github-link"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                />
+                Se kod på GitHub
+              </a>
+            )}
           </div>
         ))}
       </div>

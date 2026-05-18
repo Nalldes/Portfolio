@@ -129,6 +129,37 @@
   font-weight: 500;
 }
 
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.project-github-link:hover {
+  background-color: transparent;
+  border-color: var(--accent, #5a7090);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.project-github-link img {
+  width: 18px;
+  height: 18px;
+  filter: var(--github-filter);
+}
+
 @media (max-width: 440px) {
   #projekt {
     padding: 4rem 1.5rem;
