@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Interests from "./sections/Interests";
+import Experience from "./sections/Experience";
+import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
-import Experience from "./sections/Experience";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -24,6 +25,7 @@ function App() {
       <Hero />
       <Interests />
       <Experience />
+      <TechStack />
       <Projects />
       <Contact />
     </div>

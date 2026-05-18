@@ -44,6 +44,11 @@ function Navbar({ toggleTheme, theme }) {
           </a>
         </li>
         <li>
+          <a href="#tech-stack" onClick={closeMenu}>
+            Tech Stack
+          </a>
+        </li>
+        <li>
           <a href="#projekt" onClick={closeMenu}>
             Projekt
           </a>
