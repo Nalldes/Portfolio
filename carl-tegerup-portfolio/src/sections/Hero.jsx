@@ -33,7 +33,8 @@ function Hero() {
         <img src={profileImg} alt="Carl Tegerup" />
       </div>
       <h1>
-        Hej, mitt namn är <span className="typed-name">{currentName}</span>
+        Hej, mitt namn är{" "}
+        <span className="typed-name">{currentName || "\u200B"}</span>
       </h1>
       <p>
         Jag är en nyexaminerad student som fått upp intresset för programmering
