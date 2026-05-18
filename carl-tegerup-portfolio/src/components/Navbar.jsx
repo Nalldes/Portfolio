@@ -53,7 +53,22 @@ function Navbar({ toggleTheme, theme }) {
             Kontakt
           </a>
         </li>
+        <li>
+          <a
+            href="/Carl_Tegerup_CV.pdf"
+            download
+            className="cv-button"
+            onClick={closeMenu}
+          >
+            Ladda ner CV
+          </a>
+        </li>
       </ul>
+
+      <a href="/Carl_Tegerup_CV.pdf" download className="cv-button">
+        Ladda ner CV
+      </a>
+
       <button
         className="theme-toggle"
         onClick={toggleTheme}
