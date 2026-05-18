@@ -37,6 +37,21 @@ function Experience() {
     },
     {
       id: 3,
+      role: "Tekniskt Basår (60 hp)",
+      company: "Linköpings Universitet",
+      period: "2020 - 2021",
+      description:
+        "Basår med kunskaper inom ämnen som Kemi, Fysik och Matematik",
+      tags: ["Matematik 4", "Fysik 2", "Kemi 1"],
+    },
+    {
+      id: 4,
+      role: "Samhällsvetenskapliga programmet - inriktning beteende",
+      company: "Nyköpings Enskilda Gymnasium",
+      period: "2016 - 2020",
+    },
+    {
+      id: 5,
       role: "Tekniska Färdigheter & Verktyg",
       company: "Självlärd & Universitetsstudier",
       period: "Ständigt pågående",
