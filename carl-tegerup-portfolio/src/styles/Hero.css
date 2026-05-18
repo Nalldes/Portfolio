@@ -27,6 +27,32 @@
   color: var(--accent);
 }
 
+#om-mig h1 .typed-name {
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+  min-width: 1ch;
+}
+
+#om-mig h1 .typed-name::after {
+  content: "|";
+  position: absolute;
+  right: -12px;
+  color: var(--accent);
+  animation: blink 0.8s infinite;
+  font-weight: 400;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 #om-mig p {
   font-size: 1.2rem;
   color: var(--text-secondary);
@@ -59,16 +85,15 @@
 }
 
 @media (max-width: 440px) {
+  #om-mig {
+    padding: 0 1.5rem;
+  }
+
   .hero-avatar {
     width: 110px;
     height: 110px;
   }
-}
 
-@media (max-width: 440px) {
-  #om-mig {
-    padding: 0 1.5rem;
-  }
   #om-mig h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -76,5 +101,10 @@
   #om-mig p {
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  #om-mig h1 .typed-name::after {
+    right: -8px;
+    font-size: 1.8rem; /* Lite mindre markör på mobil */
   }
 }
