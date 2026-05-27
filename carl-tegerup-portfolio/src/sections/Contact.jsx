@@ -1,20 +1,16 @@
 import { useState } from "react";
 import "../styles/Contact.css";
-// Importera bilderna från assets-mappen
 import linkedinLogo from "../assets/linked in logo.png";
 import githubLogo from "../assets/github logo.jpg";
 
 function Contact() {
-  // useState för att hålla koll på om användaren har klickat på kopiera
   const [copied, setCopied] = useState(false);
   const email = "calletegerup40@gmail.com";
 
-  // Funktionen som körs när man klickar på rutan
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email); // Kopierar till urklipp
-    setCopied(true); // Ändrar status till kopierad
+    navigator.clipboard.writeText(email);
+    setCopied(true);
 
-    // Återställer tillbaka till din mailadress efter 2,5 sekunder
     setTimeout(() => {
       setCopied(false);
     }, 2500);
@@ -29,7 +25,6 @@ function Contact() {
       </p>
 
       <div className="contact-links">
-        {/* Bytte <a> mot en <div>, la till onClick och style för muspekaren */}
         <div
           className="contact-email"
           onClick={handleCopyEmail}

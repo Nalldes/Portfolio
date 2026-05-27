@@ -1,14 +1,12 @@
 #tech-stack {
-  padding: 5rem 2rem; /* Lite tajtare padding så det känns som en avdelare/banner */
+  padding: 5rem 2rem;
   background-color: var(
     --bg-medium
-  ); /* Den ljusare mörkblå färgen får den att poppa */
-  background-image: none; /* Säkerställer att inga prickar eller ränder stör */
+  );
+  background-image: none;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 
-  /* En subtil inre skugga i toppen och botten skapar ett djup, 
-     som att tech-stacken rullar inuti en "skåra" på skärmen */
   box-shadow: inset 0 8px 24px rgba(0, 0, 0, 0.15);
 
   display: flex;
@@ -24,12 +22,10 @@
   text-align: center;
 }
 
-/* Behållaren för hela rullbandet */
 .marquee-container {
   width: 100%;
   max-width: 1200px;
   position: relative;
-  /* Masken skapar en toning på kanterna så ikonerna fade:ar in/ut */
   mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -46,15 +42,12 @@
   );
 }
 
-/* Själva spåret som rör sig */
 .marquee-track {
   display: flex;
   width: fit-content;
-  /* 35s bestämmer hastigheten. Sänk för snabbare, höj för långsammare */
   animation: scroll 35s linear infinite;
 }
 
-/* Pausa animationen när man håller musen över */
 .marquee-container:hover .marquee-track {
   animation-play-state: paused;
 }
@@ -62,11 +55,10 @@
 .marquee-group {
   display: flex;
   align-items: center;
-  gap: 3rem; /* Avstånd mellan ikonerna */
-  padding-right: 3rem; /* Måste matcha gap för ett sömlöst hopp */
+  gap: 3rem;
+  padding-right: 3rem;
 }
 
-/* Designen på varje enskild tech-ikon */
 .tech-item {
   display: flex;
   flex-direction: column;
@@ -96,20 +88,18 @@
   object-fit: contain;
 }
 
-/* Speciell hantering för GitHub-ikonen i darkmode */
 .tech-item .dark-icon {
   filter: var(--github-filter);
 }
 
 .tech-item span {
   font-family:
-    "Fira Code", "JetBrains Mono", Consolas, monospace; /* Ger den härliga kodkänslan */
+    "Fira Code", "JetBrains Mono", Consolas, monospace;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-secondary);
 }
 
-/* Animationen som förflyttar spåret exakt 50% (vilket motsvarar en av våra två grupper) */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -119,7 +109,6 @@
   }
 }
 
-/* Responsiv anpassning för mobiler */
 @media (max-width: 440px) {
   #tech-stack h2 {
     font-size: 1.8rem;

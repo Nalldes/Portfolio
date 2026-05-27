@@ -1,7 +1,6 @@
 import "../styles/TechStack.css";
 
 function TechStack() {
-  // Din samlade tekniska kompetens
   const techStack = [
     {
       name: "C#",
@@ -64,9 +63,7 @@ function TechStack() {
       <h2>Teknisk Kompetens</h2>
 
       <div className="marquee-container">
-        {/* Vi skapar ett spår som är tillräckligt brett för två listor */}
         <div className="marquee-track">
-          {/* Renderar listan första gången */}
           <div className="marquee-group">
             {techStack.map((tech, index) => (
               <div key={`first-${index}`} className="tech-item">
@@ -80,7 +77,6 @@ function TechStack() {
             ))}
           </div>
 
-          {/* Renderar exakt samma lista en gång till för den oändliga loopen */}
           <div className="marquee-group" aria-hidden="true">
             {techStack.map((tech, index) => (
               <div key={`second-${index}`} className="tech-item">

@@ -1,8 +1,6 @@
 import "../styles/Experience.css";
 
 function Experience() {
-  // Här fyller du i dina utbildningar, jobb eller andra relevanta erfarenheter.
-  // Kopiera bara ett objekt och klistra in under för att lägga till fler!
   const experiences = [
     {
       id: 1,
